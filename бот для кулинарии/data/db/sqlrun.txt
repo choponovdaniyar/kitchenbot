@@ -1,0 +1,72 @@
+DROP TABLE IF EXISTS recipe;
+DROP TABLE IF EXISTS url;
+DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS subcategory;
+DROP TABLE IF EXISTS kitchen;
+DROP TABLE IF EXISTS level;
+DROP TABLE IF EXISTS ingredient;
+DROP TABLE IF EXISTS cook;
+DROP TABLE IF EXISTS video_link;
+DROP TABLE IF EXISTS main;
+
+
+CREATE TABLE IF NOT EXISTS main(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe,
+    url,
+    category,
+    subcategory,
+    kitchen,
+    level,
+    ingredient,
+    cook,
+    video_link
+);
+
+
+CREATE TABLE IF NOT EXISTS recipe(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS url(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS category(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS kitchen(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS subcategory(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS level(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS ingredient(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+CREATE TABLE IF NOT EXISTS cook(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name 
+);
+
+CREATE TABLE IF NOT EXISTS video_link(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name
+);
+
+

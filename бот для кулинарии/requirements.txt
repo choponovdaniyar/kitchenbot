@@ -1,0 +1,9 @@
+aiogram<3.0
+environs~=8.0.0
+lxml
+aiohttp
+asyncio
+aiosqlite
+fake_useragent
+bs4
+BeautifulSoup
